@@ -110,7 +110,7 @@ function setWidths(){document.documentElement.style.setProperty('--plot-w',plotW
 function xFor(pos){return leftAxis+(pos-.5)*charW}
 function stemColor(i){return TRUE_COLORS[i%TRUE_COLORS.length]}
 function altColor(i){return ALT_COLORS[i%ALT_COLORS.length]}
-function defaultK(x){return Math.max(1,Math.round(x.L*0.35))}
+function defaultK(x){return 1}
 function clampK(x,val){return Math.max(1,Math.min(x.L,val))}
 function scrollToCurrent(){
   const target=Math.max(0,xFor(k)-120);
